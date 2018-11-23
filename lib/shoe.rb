@@ -1,13 +1,17 @@
 class Shoe
   attr_accessor :color, :material, :condition,:brands
-  attr_reader :size, :unique_brands
+  attr_reader :size
   
   BRANDS = []
   UNIQUE_BRANDS = []
 
   def initialize(brands)
     @brands = brands
-    BRANDS << brands
+    if shoe.size == 3
+      UNIQUE_BRANDS << brands
+    else
+      BRANDS << brands
+    end
   end
 
   def cobble
@@ -15,8 +19,4 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   
-  def unique_brands
-    @unique_brands = unique_brands
-    UNIQUE_BRANDS << brands.size
-  end
 end
