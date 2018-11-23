@@ -3,7 +3,6 @@ class Shoe
   attr_reader :size
   
   BRANDS = []
-  UNIQUE_BRANDS = []
 
   def initialize(brands)
     @brand = brands
